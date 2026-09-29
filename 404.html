@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex">
 <title>LifeChapters</title>
-<script>location.replace("https://lifechapters.com.au"+location.pathname+location.search+location.hash);</script>
+<script>var p=location.pathname;if(/^\/posts\//.test(p))p=p.replace(/^\/posts\//,'/blog/').replace(/\/+$/,'');location.replace("https://lifechapters.com.au"+p+location.search+location.hash);</script>
 <noscript><meta http-equiv="refresh" content="0; url=https://lifechapters.com.au/blog"></noscript>
 </head>
 <body>
